@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contacts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+
+<div class="container">
+  <h2>My Contacts</h2>
+
+  
+  <div class="top-controls">
+  <input type="text" id="search" placeholder="Search contact by name or phone">
+
+  <select id="sort">
+    <option value="">Sort</option>
+    <option value="az">Name A–Z</option>
+    <option value="za">Name Z–A</option>
+  </select>
+</div>
+
+
+  <form id="contactForm">
+    <input type="hidden" id="index">
+    <input id="name" placeholder="Name">
+    <input id="phone" placeholder="Phone">
+    <input id="email" placeholder="Email">
+
+    
+
+    <button>Add Contact</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Pic</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="contactList"></tbody>
+  </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
